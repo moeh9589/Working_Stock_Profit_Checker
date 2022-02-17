@@ -36,4 +36,4 @@ print("")
 print(f"Profit = ${profit:.2f}")
 total = cost + profit
 print(f"Total = ${total:.2f}")
-print("")
+print(" ")
