@@ -21,7 +21,7 @@ for ticker in ticker_dict:
     time.sleep(1)
     soup = BeautifulSoup(driver.page_source, "lxml")
     time.sleep(1.2)
-    item = soup.find('fin-streamer', attrs={"data-reactid": "47"})
+    item = soup.find('fin-streamer', attrs={"class": "Fw(b) Fz(36px) Mb(-4px) D(ib)"})
     # print(item.text)
     newnum = str(item.text)
     stock_amt = float(newnum.replace(',', ''))*ticker_dict[ticker]
